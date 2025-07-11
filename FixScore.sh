@@ -1,5 +1,5 @@
 #!/bin/bash
-#Lily's Homemade Script to fix the Score command so you dont have to manually go in and possibly mess things
+#Lily's Script to fix the Score command so you dont have to manually go in and possibly mess things
 
 user=$(whoami)
 
