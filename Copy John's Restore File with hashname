@@ -1,0 +1,7 @@
+#!/bin/bash
+#grabs the name of the file its restoring, which is stored in the third line
+hashfilename="$(head -n 3 /home/FemBit/.john/john.rec | tail -n 1 | xargs)"
+#copies it somewhere, adding the name of the hash file to the front of it. replace '/mnt/c/Users...' to the directory youd like it to copy to, and add $hashfilename\.john.rec to the end of it. also replace FemBit with your username. 
+cp /home/FemBit/.john/john.rec /mnt/c/Users/hlumy/Downloads/$hashfilename\.john.rec
+#if youd like to run this as a crontab for every minute, do crontab -e and paste this: * * * * * /home/FemBit/johndatacp.sh
+#replacing FemBit with your username.
