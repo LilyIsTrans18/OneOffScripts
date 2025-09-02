@@ -1,6 +1,7 @@
 #!/bin/bash
 #Lily's bash script that checks if there are new stickybits on the system. Useful as a cron job.
 ls -Rl / 2> /dev/null | grep rws | grep -vF \.rws > ~/tmpSB
+#If you need a new stickybits file, use: ls -Rl / 2> /dev/null | grep rws | grep -vF \.rws > ~/stickybits
 md5one="$(md5sum ~/stickybits | awk '{ print $1 }' )"
 md5two="$(md5sum ~/tmpSB | awk '{ print $1 }' )"
 
