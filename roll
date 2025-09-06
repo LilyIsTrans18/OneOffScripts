@@ -1,2 +1,3 @@
 #!/bin/bash
+#lily's dice roll script so i dont have to run this pretty sizable command everytime lol
 echo $((1 + $RANDOM % $1))
